@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" href="assets/logo.png" type="image/png">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Homo Depot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Logo">
+            <p class="tagline" onclick="togglePopup()">More slaying. More doing.</p>
+            <p class="tagline">That's the power of The Homo Depot.</p> <!-- Tagline added here -->
+        </div>
+        <div class="icons">
+            <a href="https://x.com/HomoDepotToken" target="_blank">
+                <img src="assets/x_.png" alt="Twitter Icon">
+            </a>
+            <a href="https://dexscreener.com" target="_blank">
+                <img src="assets/dex_.png" alt="Dexscreener Icon">
+            </a>
+            <a href="https://birdeye.so" target="_blank">
+                <img src="assets/birdeye_.png" alt="Birdeye Icon">
+            </a>
+            <a href="https://telegram.org" target="_blank">
+                <img src="assets/telegram_.png" alt="Telegram Icon">
+            </a>
+        </div>
+        <button id="play-music" onclick="playMusic()">Play Music</button>
+        <audio id="background-music" src="assets/theme.mp3" loop></audio>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="togglePopup()">&times;</span>
+            <p>Welcome to The Homo Depot!</p>
+            <p>We're here to empower your DIY journey with fabulousness.</p>
+            <p>Come build with us, lets nail it, in style!</p>
+            <img src="assets/build_.png" alt="Build Image" class="centered-image">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f96302; /* Home Depot primary color */
+}
+
+/* Container for centering content */
+.container {
+    text-align: center;
+}
+
+/* Logo styling */
+.logo img {
+    max-width: 40%;
+    height: auto;
+    margin-bottom: 20px; /* Increase this value to create more space */
+}
+
+/* Tagline styling */
+.tagline {
+    font-size: 18px;
+    color: #fff; /* White color for contrast */
+    font-family: 'Arial Black', 'Impact', sans-serif; /* Using Arial Black or Impact for Home Depot-like font */
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s; /* Smooth transition effect for color change */
+}
+
+/* Rainbow text animation */
+@keyframes rainbow {
+    0% { color: red; }
+    16.666% { color: orange; }
+    33.333% { color: yellow; }
+    50% { color: green; }
+    66.666% { color: blue; }
+    83.333% { color: indigo; }
+    100% { color: violet; }
+}
+
+.tagline:hover {
+    animation: rainbow 1.5s infinite; /* Apply rainbow animation on hover */
+}
+/* Icons container */
+.icons {
+    margin-top: 20px;
+}
+
+/* Icons styling */
+.icons a {
+    margin: 0 15px;
+    display: inline-block;
+    transition: transform 0.3s; /* Smooth transition for size change */
+}
+
+.icons img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Increase size of icons on hover */
+.icons a:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+/* Play button styling */
+#play-music {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #f96302;
+    border: 2px solid #f96302;
+    cursor: pointer;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Add CSS for Popup */
+.popup {
+    display: none; /* Hide popup by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 9999; /* Ensure popup is above other content */
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+    text-align: center;
+    font-family: 'Arial Black', 'Impact', sans-serif;
+}
+
+.centered-image {
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 75%; /* Limit the image size to 50% of its container */
+    height: auto;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .icons img {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (max-width: 600px) {
+    .logo img {
+        max-width: 75%; /* Adjusted size for mobile */
+    }
+}
